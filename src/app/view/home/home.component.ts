@@ -13,4 +13,11 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
     }
 
+    honk() {
+        let audio = new Audio();
+        audio.src = "../../../assets/Honk1.wav";
+        audio.load();
+        audio.play();
+    }
+
 }
