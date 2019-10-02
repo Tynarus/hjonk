@@ -4,9 +4,6 @@
 
         .hj-home-top-inner {
             background-image: url(../../../assets/transparent-square-tiles.png);
-            box-shadow:
-                inset 0px 16px 8px -15px #222,
-                inset 0px -16px 8px -15px #222;
 
             .hj-container {
                 padding: 100px 0;
@@ -91,7 +88,7 @@
         }
     }
 
-    .hj-home-bottom .hj-container {
+    .hj-home-middle .hj-container {
         display: flex;
         flex-wrap: wrap;
         padding: 64px 0;
@@ -137,6 +134,137 @@
                     margin-top: 6px;
                 }
             }
+        }
+    }
+
+    .hj-home-bottom {
+        background-color: #424242;
+        position: relative;
+
+        .hj-home-bottom-bg {
+            background-image: url(../../../assets/geese.jpg);
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .hj-container {
+            padding: 64px 0;
+            position: relative;
+            z-index: 2;
+
+            @media screen and (max-width: 900px) {
+                h1 {
+                    font-size: 48px;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                h1 {
+                    font-size: 42px;
+                }
+            }
+        }
+
+        section {
+            display: flex;
+            font-size: 18px;
+            font-style: italic;
+            align-items: flex-start;
+
+            img {
+                display: block;
+                width: 10%;
+                flex-shrink: 0;
+                margin-right: 32px;
+            }
+
+            .hj-quote, .mat-icon {
+                color: #eee;
+            }
+
+            .hj-quote {
+                .hj-quote-text {
+                    display: flex;
+                    align-items: flex-start;
+
+                    .mat-icon {
+                        $size: 64px;
+                        width: $size;
+                        height: $size;
+                        font-size: $size;
+                        margin-left: 16px;
+                        margin-top: -24px;
+                    }
+                }
+
+                .hj-name {
+                    margin-top: 16px;
+                    color: #ccc;
+                    font-size: 20px;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 16px;
+
+                .hj-quote {
+                    .hj-name {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+
+                img {
+                    width: 15%;
+                    margin-right: 16px;
+                }
+
+                .hj-quote {
+                    .hj-quote-text {
+                        .mat-icon {
+                            $size: 48px;
+                            width: $size;
+                            height: $size;
+                            font-size: $size;
+                            margin-left: 8px;
+                            margin-top: -16px;
+                        }
+                    }
+
+                    .hj-name {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 450px) {
+                img {
+                    width: 20%;
+                    margin-right: 12px;
+                }
+
+                .hj-quote {
+                    .hj-quote-text {
+                        .mat-icon {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mat-divider {
+            margin: 32px 0;
         }
     }
 }
