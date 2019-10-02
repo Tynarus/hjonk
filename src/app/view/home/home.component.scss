@@ -1,0 +1,78 @@
+.hj-home {
+    .hj-home-top {
+        background-color: #424242;
+
+        .hj-home-top-inner {
+            background-image: url(../../../assets/transparent-square-tiles.png);
+            box-shadow:
+                inset 0px 16px 8px -15px #222,
+                inset 0px -16px 8px -15px #222;
+
+            .hj-container {
+                padding: 100px 0;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .hj-drop-a-beat {
+                width: 50%;
+                padding-top: 32px;
+
+                h1 {
+                    margin-bottom: 8px;
+                }
+
+                button {
+                    margin-top: 32px;
+                }
+            }
+
+            img {
+                display: block;
+                width: 30%;
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    .hj-home-bottom .hj-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 64px 0;
+
+        section {
+            width: calc(100% / 3);
+            box-sizing: border-box;
+            padding: 0 16px 32px;
+
+            header {
+                display: flex;
+                align-items: center;
+
+                $size: 50px;
+
+                .mat-icon {
+                    width: $size;
+                    height: $size;
+                    font-size: $size;
+                    margin-right: 16px;
+                }
+
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+
+            .hj-desc {
+                margin-top: 8px;
+
+                .hj-smol {
+                    font-size: 10px;
+                    line-height: 11px;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}

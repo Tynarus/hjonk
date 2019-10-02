@@ -1,0 +1,18 @@
+.hj-app {
+    .mat-toolbar {
+        display: flex;
+
+        img {
+            display: block;
+            height: 80%;
+        }
+
+        .hj-spacer {
+            flex: 1 1 auto;
+        }
+    }
+
+    main {
+
+    }
+}
