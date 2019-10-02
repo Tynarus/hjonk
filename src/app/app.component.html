@@ -1,5 +1,9 @@
 <div class="hj-app">
     <mat-toolbar color="primary">
+        <button mat-icon-button class="hj-menu" (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
         <img src="assets/Hjonk.svg" alt="Hjönk" />
 
         <div class="hj-spacer"></div>
@@ -10,10 +14,36 @@
         <button mat-button routerLink="/contact">Contact</button>
     </mat-toolbar>
 
-    <main>
-        <router-outlet></router-outlet>
-    </main>
+    <mat-sidenav-container hasBackdrop>
+        <mat-sidenav mode="over" fixedInViewport #sidenav>
+            <a routerLink="/" (click)="sidenav.close()">
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </a>
 
-    <footer>
-    </footer>
+            <a routerLink="/modern-software" (click)="sidenav.close()">
+                <mat-icon>cloud_upload</mat-icon>
+                <span>Modern Software Services</span>
+            </a>
+
+            <a routerLink="/about" (click)="sidenav.close()">
+                <mat-icon>people</mat-icon>
+                <span>About Us</span>
+            </a>
+
+            <a routerLink="/contact" (click)="sidenav.close()">
+                <mat-icon>email</mat-icon>
+                <span>Contact</span>
+            </a>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <main>
+                <router-outlet></router-outlet>
+            </main>
+
+            <footer>
+            </footer>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
 </div>
