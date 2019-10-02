@@ -14,7 +14,8 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
     }
 
-    honk() {
+    // I think that removing the load() function might help Mobile to work.
+    public honk(): void {
         try {
             this.honkAudio1.play();
         } catch {
