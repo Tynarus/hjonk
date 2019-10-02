@@ -5,6 +5,7 @@ import { MatButtonModule, MatToolbarModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NotFoundModule } from './view/not-found/not-found.module';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { AppComponent } from './app.component';
         AppRoutingModule,
         BrowserAnimationsModule,
         MatToolbarModule,
-        MatButtonModule
+        MatButtonModule,
+        NotFoundModule
     ],
     providers: [],
     bootstrap: [AppComponent]

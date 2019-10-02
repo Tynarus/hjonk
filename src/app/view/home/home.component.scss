@@ -12,18 +12,66 @@
                 padding: 100px 0;
                 display: flex;
                 justify-content: space-between;
+
+                @media screen and (max-width: 800px) {
+                    padding: 64px 0;
+                }
+
+                @media screen and (max-width: 600px) {
+                    padding: 48px 0 64px;
+                }
             }
 
             .hj-drop-a-beat {
                 width: 50%;
-                padding-top: 32px;
+                padding-top: 64px;
+
+                @media screen and (max-width: 1000px) {
+                    padding-top: 48px;
+                }
+
+                @media screen and (max-width: 900px) {
+                    padding-top: 0;
+                    width: 60%;
+                }
+
+                @media screen and (max-width: 800px) {
+                    width: 70%;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                }
 
                 h1 {
                     margin-bottom: 8px;
+
+                    img {
+                        display: none;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        display: flex;
+
+                        img {
+                            display: block;
+                            height: 80px;
+                        }
+                    }
+
+                    @media screen and (max-width: 370px) {
+                        font-size: 30px;
+                    }
                 }
 
                 button {
                     margin-top: 32px;
+
+                    @media screen and (max-width: 375px) {
+                        width: 100%;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
                 }
             }
 
@@ -31,6 +79,14 @@
                 display: block;
                 width: 30%;
                 transform: scaleX(-1);
+
+                @media screen and (max-width: 800px) {
+                    width: 28%;
+                }
+
+                @media screen and (max-width: 600px) {
+                    display: none;
+                }
             }
         }
     }
@@ -44,6 +100,14 @@
             width: calc(100% / 3);
             box-sizing: border-box;
             padding: 0 16px 32px;
+
+            @media screen and (max-width: 800px) {
+                width: 50%;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
 
             header {
                 display: flex;
