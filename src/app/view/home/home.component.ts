@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+    public honkAudio1 = new Audio('../../../assets/Honk1.wav');
 
     constructor() {
     }
@@ -13,11 +14,12 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
     }
 
-    honk() {
-        let audio = new Audio();
-        audio.src = "../../../assets/Honk1.wav";
-        audio.load();
-        audio.play();
+    // I think that removing the load() function might help Mobile to work.
+    public honk(): void {
+        try {
+            this.honkAudio1.play();
+        } catch {
+            console.error('Audio File could not be played');
+        }
     }
-
 }
