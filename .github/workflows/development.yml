@@ -13,6 +13,8 @@ jobs:
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
+      - name: Linting
+        run: npm run lint
       - name: Standard Build
         run: npm run build
       - name: Prod Build
