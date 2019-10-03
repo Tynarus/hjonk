@@ -5,6 +5,10 @@ import { NotFoundComponent } from './view/not-found/not-found.component';
 
 const routes: Routes = [
     {
+        path: 'modern-software',
+        loadChildren: () => import('./view/modern-software/modern-software.module').then(m => m.ModernSoftwareModule)
+    },
+    {
         path: '',
         loadChildren: () => import('./view/home/home.module').then(m => m.HomeModule)
     },
