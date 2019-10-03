@@ -65,6 +65,33 @@
         }
     }
 
-    main {
+    footer {
+        .hj-container {
+            padding: 48px 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .hj-copyright {
+                font-size: 12px;
+                opacity: 0.5;
+                flex: 1 1 auto;
+            }
+
+            button {
+                font-size: 12px;
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+
+            @media screen and (max-width: 650px) {
+                display: block;
+                text-align: center;
+
+                nav {
+                    margin-top: 8px;
+                }
+            }
+        }
     }
 }
