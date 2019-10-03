@@ -65,7 +65,14 @@
         }
     }
 
+    main {
+        background-color: #424242;
+    }
+
     footer {
+        position: relative;
+        z-index: 2;
+
         .hj-container {
             padding: 48px 0;
             display: flex;
