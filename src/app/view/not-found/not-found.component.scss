@@ -3,9 +3,27 @@
     align-items: center;
     padding: 48px 0;
     flex-direction: column;
+    background-color: #424242;
 
-    img {
-        display: block;
-        width: 20%;
+    .hj-inner {
+        background-image: url(../../../assets/transparent-square-tiles.png);
+
+        h1 {
+            text-align: center;
+
+            @media screen and (max-width: 500px) {
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
+
+        img {
+            display: block;
+            width: 350px;
+
+            @media screen and (max-width: 500px) {
+                width: 80%;
+            }
+        }
     }
 }
