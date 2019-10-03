@@ -1,18 +1,61 @@
 .hj-modern-software {
     .hj-intro {
-        padding: 64px 0;
+        padding: 124px 0;
+        position: relative;
 
-        h1 {
-            margin-bottom: 32px;
+        @media screen and (max-width: 800px) {
+            padding: 64px 0;
         }
 
-        .hj-page-desc {
-            font-size: 18px;
+        @media screen and (max-width: 800px) {
+            padding: 48px 0;
+        }
+
+        .hj-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            background-image: url(../../../assets/img/clouds.jpg);
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.2;
+        }
+
+        .hj-container {
+            position: relative;
+            z-index: 2;
+
+            h1 {
+                margin-bottom: 32px;
+
+                @media screen and (max-width: 600px) {
+                    font-size: 32px;
+                    line-height: 36px;
+                }
+            }
+
+            .hj-page-desc {
+                font-size: 18px;
+            }
         }
     }
 
     .hj-tech {
         padding: 64px 0;
+        position: relative;
+        z-index: 2;
+        background-color: #424242;
+
+        @media screen and (max-width: 800px) {
+            padding: 48px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 32px 0;
+        }
 
         .hj-container {
             display: flex;
@@ -24,6 +67,14 @@
                 padding: 32px 16px;
                 display: flex;
                 align-items: center;
+
+                @media screen and (max-width: 800px) {
+                    width: 50%;
+                }
+
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                }
 
                 img {
                     display: block;
