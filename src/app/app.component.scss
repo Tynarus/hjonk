@@ -15,6 +15,11 @@
         img {
             display: block;
             height: 80%;
+            -webkit-user-drag: none;
+        }
+
+        img:focus {
+            outline: 0;
         }
 
         .hj-spacer {
