@@ -9,6 +9,10 @@ const routes: Routes = [
         loadChildren: () => import('./view/modern-software/modern-software.module').then(m => m.ModernSoftwareModule)
     },
     {
+        path: 'about',
+        loadChildren: () => import('./view/about/about.module').then(m => m.AboutModule)
+    },
+    {
         path: '',
         loadChildren: () => import('./view/home/home.module').then(m => m.HomeModule)
     },
