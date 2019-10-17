@@ -1,0 +1,33 @@
+@import '../../../theme';
+
+.hj-contact {
+    padding: 72px 0;
+
+    h1 {
+        margin-bottom: 16px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 26px;
+        margin-bottom: 0;
+        font-weight: 400;
+    }
+
+    .hj-honk-at-us {
+        margin-top: 48px;
+        font-size: 20px;
+        font-weight: 300;
+
+        a {
+            text-decoration: none;
+            color: mat-color($primary);
+            font-weight: 400;
+        }
+    }
+}
