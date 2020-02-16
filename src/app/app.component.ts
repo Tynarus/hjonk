@@ -7,9 +7,11 @@ import { version } from '../../config';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    private versionNumber: string;
+    private readonly versionNumber: string = version;
 
-    public constructor() {
-        this.versionNumber = version;
+    public constructor() {}
+
+    public get version(): string {
+        return this.versionNumber;
     }
 }
