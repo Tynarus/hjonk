@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { version } from '../../config';
 
 @Component({
     selector: 'hj-app',
@@ -6,4 +7,9 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+    private versionNumber: string;
+
+    public constructor() {
+        this.versionNumber = version;
+    }
 }
