@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatDividerModule } from '@angular/material';
+import { MatDividerModule } from '@angular/material/divider';
 import { NotFoundComponent } from './not-found.component';
 
 
